@@ -1,0 +1,86 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body,
+body * {
+  font-family: 'Newsreader', 'Helvetica', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search,
+.phonetics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#definitionSection,
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#definitionSection {
+  width: 90%;
+}
+
+.search,
+.phonetics {
+  text-align: center;
+  height: 150px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+#userWord {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+ul {
+  justify-content: space-around;
+  list-style: disc;
+  gap: 25px;
+  
+}
+
+
+li:first-child {
+  list-style: none;
+  font-weight: bold;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
