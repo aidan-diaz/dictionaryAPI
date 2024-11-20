@@ -1,22 +1,19 @@
-# 📊 Project: Simple API 1
+# Dictionary API
 
-### Goal: Display data returned from an api
+![Thumbnail](css/assets/thumbnail.png)
 
-### How to submit your code for review:
+Link to project: ()
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made:
+Tech used: HTML, CSS, JS
+
+A dictionary application that makes a fetch request to a dictionary API (https://dictionaryapi.dev/?ref=freepublicapis.com) and showcases the corresponding pronunciation, parts of speech, audio pronuncation, and definitions for the user inputted word. 
+
+## Optimizations
+
+Initially, upon fetching data from the API and displaying it on the DOM, the definitions for ALL parts of speech were being displayed in the same list. This version of the application has been updated to separate lists of definitions based on parts of speech.
+
+## Lessons Learned
+
+By building this application, I learned how to pull audio/mpeg files from the API and allow users to play a pronunciation audio file to go along with the word they typed in. I also learned to use the appendChild method to dynamically create a list of definitions from the data that the API returned.
